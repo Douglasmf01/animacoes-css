@@ -1,0 +1,24 @@
+body{
+
+margin: 0px;
+background-image: url(imagens/fundo2.jpg);
+background-size: cover;
+height: 100vh;
+background-repeat: no-repeat;
+}
+img{
+   
+   position: absolute;
+   top: 50vh;
+   animation: voa 2s ease-in infinite alternate;
+   
+}
+@keyframes voa{
+    0%{
+        transform: translate(0%);
+    }
+   
+    100%{
+        transform: translate(75vw);
+    }
+}

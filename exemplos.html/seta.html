@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seta</title>
+    <style>
+        body{
+            position: relative;
+            height: 100vh;
+        }
+        #svg1{
+        
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          animation: pulando 2s  infinite linear ;
+        }
+        #svg2{
+        
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: parabaixo 1s infinite;
+        
+      }
+        @keyframes pulando {
+            
+          0%{
+            transform: translateY(-20%) translatex(-50%);
+          } 
+          10%{
+           transform: translateY(20%) translateX(-50%);
+          }
+          20%{
+            transform: translateY(-20%) translatex(-50%);
+          }
+          30%{
+            transform: translateY(20%) translatex(-50%);
+          }
+          40%{
+            transform: translateY(-20%) translatex(-50%);
+          }
+          100%{
+            transform: translateY(-20%) translatex(-50%);
+          }
+        
+        }
+        @keyframes parabaixo {
+          
+         
+            to{
+                transform: translateY(20%) translateX(-50%);
+            }
+        }
+            
+       
+
+    </style>
+    
+</head>
+<body>
+    <svg id="svg1" xmlns="http://www.w3.org/2000/svg" height="90" viewBox="0 -960 960 960" width="90"><path d="M480-160 160-480l42-42 248 248v-526h60v526l248-248 42 42-320 320Z"/></svg>
+    <svg id="svg2" xmlns="http://www.w3.org/2000/svg" height="90" viewBox="0 -960 960 960" width="90"><path d="M480-160 160-480l42-42 248 248v-526h60v526l248-248 42 42-320 320Z"/></svg>
+    
+    
+
+</body>
+</html>
