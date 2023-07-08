@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bolas girando</title>
+    <style>
+        body{
+            position: relative;
+            height: 100vh;
+        }
+        div{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        #n1{
+            animation: vermelho 4s linear  infinite  ;
+        }
+        #n2{
+            right: 0;
+            background-color: blue;
+            animation: azul 4s linear  infinite  ;
+        }
+        #n3{
+            bottom: 0;
+            background-color: green;
+            animation: verde 4s linear infinite ;
+        }
+        #n4{
+            right: 0;
+            bottom: 0;
+            background-color: purple;
+            animation: roxo 4s linear infinite ;
+        }
+        @keyframes vermelho {
+            25%{
+                transform: translate(65vw);
+                
+            }
+            50%{
+                transform: translate(65vw,67vh);
+            }
+            75%{
+                transform: translate(0vw,67vh);
+            }
+            100%{
+
+            }
+        }
+        @keyframes azul {
+            25%{
+                transform: translate(0vw, 65vh);
+            }
+            50%{
+                transform: translate(-65vw, 65vh);
+            }
+            75%{
+                transform: translate(-65vw, 0vh);
+            }
+        }
+         @keyframes roxo {
+            25%{
+                transform: translate(-65vw);
+            }
+            50%{
+                transform: translate(-65vw, -65vh);
+            }
+            75%{
+                transform: translate(0vw, -65vh);
+            }
+        }
+        @keyframes verde {
+            25%{
+                transform: translate(0vw, -65vh);
+            }
+            50%{
+                transform: translate(65vw, -65vh);
+            }
+            75%{
+                transform: translate(65vw, 0vh);
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="n1"></div>
+    <div id="n2"></div>
+    <div id="n3"></div>
+    <div id="n4"></div>
+</body>
+</html>

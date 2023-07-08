@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bolas aumentando</title>
+    <style>
+        body{
+            position: relative;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+
+        }
+        div{
+            position: absolute;
+            width: 5%;
+            height: 5%;
+            background-color: rgb(111, 0, 255);
+            border-radius: 50%;
+        }
+        #bola1{
+            background-color: brown;
+            animation: padrao1 7s infinite ;
+        }
+        #bola2{
+            background-color: rgb(42, 165, 108);
+            animation: padrao1 7s .2s infinite ;
+        }
+        @keyframes padrao1 {
+            20%{
+                transform: scale(200%);
+            
+            }
+            30%{
+                transform: scale(300%);
+            
+            }
+            40%{
+                transform: scale(400%);
+            }
+            50%{
+                transform: scale(500%);
+            
+            }
+            60%{
+                transform: scale(600%);
+            }
+            70%{
+                transform: scale(700%);
+            
+            }
+            80%{
+                transform: scale(800%);
+            }
+            
+        }
+        @keyframes padrao2 {
+            
+        }
+        </style>
+</head>
+<body>
+    <div id="bola1"></div>
+    <div id="bola2"></div>
+</body>
+</html>
